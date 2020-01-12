@@ -146,3 +146,7 @@ body {
 .contactButton:hover {
   text-decoration: none;
 }
+tbody td{
+  font-weight: 600 !important;
+  font-size: 1.2em;
+}
