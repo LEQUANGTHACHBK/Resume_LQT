@@ -19,11 +19,18 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Le Quang Thach Resume</title>
   </head>
   <body>
+
+    <div class="loader">
+      <div class="inner">
+        
+      </div>
+    </div>
     <div id="slides">
       <div class="overlay"></div>
       <div class="slides-container">
@@ -42,6 +49,34 @@
         <a href="#" class="prev"></a>
       </nav>
     </div>
+
+    <nav id="navigation" class="navbar navbar-expand-lg sticky-top">
+      <a class="navbar-brand" href="#">LEQUANGTHACH</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About Me<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stats">Stats</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <div id="about" class="section">
       <div class="container">
@@ -169,7 +204,7 @@
     <div id="stats" class="statsSection section">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sn-6">
+          <div class="col-md-3 col-sm-6">
             <div class="squareItem">
               <div class="squareInnerContainer">
                 <div class="squareIcon">
@@ -183,7 +218,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sn-6">
+          <div class="col-md-3 col-sm-6">
             <div class="squareItem">
               <div class="squareInnerContainer">
                 <div class="squareIcon">
@@ -197,7 +232,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sn-6">
+          <div class="col-md-3 col-sm-6">
             <div class="squareItem">
               <div class="squareInnerContainer">
                 <div class="squareIcon">
@@ -211,7 +246,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sn-6">
+          <div class="col-md-3 col-sm-6">
             <div class="squareItem">
               <div class="squareInnerContainer">
                 <div class="squareIcon">
@@ -232,9 +267,128 @@
       <div class="col-md-12 text-center">
         <p class="subHeading">Like what you see ?</p>
         <h2>I'd love to here from you !!!</h2>
-        <a href="mailTO:lequangthachbk@gmail.com" class="contactButton"
+        <a href="mailTO:lequangthachbk@gmail.com" class="btn btn-secondary contactButton"
           >GET IN TUOCH !</a
         >
+      </div>
+    </div>
+
+    <div id="portfolio" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h2>PORTFOLIO</h2>
+          </div>
+          <div class="filter">
+            <ul id="filters">
+              <li><a href="#" data-filter="*" class ="current">ALL</a></li>
+              <li><a href="#" data-filter=".apps">APP</a></li>
+              <li><a href="#" data-filter=".me">ME</a></li>
+              <li><a href="#" data-filter=".websites">WEBSITES</a></li>
+            </ul>
+          </div>  
+
+          <div class="ItemsContainer">
+            <ul class="items">
+              <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                    <img src="./images/usb6.jpg" alt="">
+                    <div class="icon">
+                      <a href="./images/Profile.jpg" title="view Images" class="openButton" data-fancybox data-caption="this is first project">
+                        <i class="fa fa-search"></i>
+                      </a>
+                      <a href="http://phimmoi.net" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imagesOverLay"></div>
+                </div>
+              </li>
+
+              <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                    <img src="./images/usb6.jpg" alt="">
+                    <div class="icon">
+                      <a href="./images/Profile.jpg" title="view Images" class="openButton" data-fancybox data-caption="this is first project">
+                        <i class="fa fa-search"></i>
+                      </a>
+                      <a href="" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imagesOverLay"></div>
+                </div>
+              </li>
+
+              <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                    <img src="./images/usb6.jpg" alt="">
+                    <div class="icon">
+                      <a href="./images/Profile.jpg" title="view Images" class="openButton" data-fancybox data-caption="this is first project">
+                        <i class="fa fa-search"></i>
+                      </a>
+                      <a href="" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imagesOverLay"></div>
+                </div>
+              </li>
+
+              <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                    <img src="./images/usb6.jpg" alt="">
+                    <div class="icon">
+                      <a href="./images/Profile.jpg" title="view Images" class="openButton" data-fancybox data-caption="this is first project">
+                        <i class="fa fa-search"></i>
+                      </a>
+                      <a href="" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imagesOverLay"></div>
+                </div>
+              </li>
+
+              <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                    <img src="./images/usb6.jpg" alt="">
+                    <div class="icon">
+                      <a href="./images/Profile.jpg" title="view Images" class="openButton" data-fancybox data-caption="this is first project">
+                        <i class="fa fa-search"></i>
+                      </a>
+                      <a href="" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imagesOverLay"></div>
+                </div>
+              </li>
+
+              <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                    <img src="./images/usb6.jpg" alt="">
+                    <div class="icon">
+                      <a href="./images/Profile.jpg" title="view Images" class="openButton" data-fancybox data-caption="this is first project">
+                        <i class="fa fa-search"></i>
+                      </a>
+                      <a href="" target="_blank" class="projectLink">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="imagesOverLay"></div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyrightSection">
+      <div class="col-md-12 text-center">
+        <p>&copy; Copyright By LE QUANG THACH 2020</p>
       </div>
     </div>
 
@@ -245,6 +399,9 @@
     <script src="js/typed.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.superslides.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
