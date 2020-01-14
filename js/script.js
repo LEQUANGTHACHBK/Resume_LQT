@@ -96,7 +96,7 @@ $(document).ready(function() {
    })
 
 
-   $("#navigation li a").click(function(e){
+   $("#navigation a").click(function(e){
     e.preventDefault(); 
 
     var targetElement = $(this).attr("href");
