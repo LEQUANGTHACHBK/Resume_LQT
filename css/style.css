@@ -62,7 +62,7 @@ body {
 }
 .skillsSection,
 .contactSection {
-  background-color: #e74c3c;
+  background-color: #053653;
   color: #fff;
 }
 .skill {
@@ -118,7 +118,7 @@ body {
   font-size: 56px;
   margin-bottom: 10px;
   font-weight: 480;
-  color: #e74c3c;
+  color: #4267B2;
 }
 .squareContent h3 {
   font-size: 13px;
@@ -264,7 +264,7 @@ tbody td{
   padding: 0px;
 }
 .copyrightSection{
-  background-color: #000;
+  background-color: #4267B2;
   color: #fff;
   padding: 30px 5px;
 }
@@ -272,7 +272,7 @@ tbody td{
   margin: 0px;
 }
 #navigation{
-  background-color: #e74c3c;
+  background-color: #4267B2;
   padding: 20px 10px;
   z-index: 10;
 }
